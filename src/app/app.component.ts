@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { cricketers } from './arryinfo/infoarry';
+import { Iplayers } from './interface/interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'pipefilter';
+  crickettam:Array<Iplayers>=cricketers
+searchcountry!:string;
 }
