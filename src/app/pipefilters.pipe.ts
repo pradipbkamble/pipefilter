@@ -11,10 +11,10 @@ export class PipefiltersPipe implements PipeTransform {
     let playerfilter:Array<Iplayers>=[]
     if(searchcountry){
       playerfilter=value.filter((play:Iplayers)=>{
-        if(play.name.toLowerCase().includes(searchcountry)){
+        if(play.name.toLowerCase().includes(searchcountry.toLowerCase())){
           return true
         }
-        else if(play.team.toLowerCase().includes(searchcountry)){
+        else if(play.team.toLowerCase().includes(searchcountry.toLowerCase())){
           return true
         }
         else if(play.odiRuns.toString().includes(searchcountry)){
